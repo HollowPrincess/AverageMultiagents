@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'jade projects'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven {
+        url "http://jade.tilab.com/maven/"
+    }
+}
+
+dependencies {
+    compile group: 'com.tilab.jade',
+            name: 'jade',
+            version: '4.5.0'
+}
